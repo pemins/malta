@@ -17,8 +17,48 @@
         /* Custom CSS for Africa House */
         body {
             font-family: 'Arial', sans-serif;
+            background-color: #f8f8f8;
+            color: #333;
         }
-     
+
+        /* Typography styles */
+        h1, h2, h3, h4, h5 {
+            font-family: 'Amatic SC', cursive;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        /* Background and box shadow */
+        .section {
+            background-color: #fff;
+            padding: 50px 0;
+            box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Color palette */
+        .primary {
+            color: #007bff;
+        }
+
+        .accent {
+            color: #ff6b6b;
+        }
+
+        /* Animations and transitions */
+        .hover-fade {
+            transition: opacity 0.3s;
+        }
+
+        .hover-fade:hover {
+            opacity: 0.8;
+        }
+
         .navbar.bg-scroll {
             background-color: rgba(0, 0, 0, 0.5); /* Set the background color when scrolled */
         }
@@ -68,7 +108,7 @@
             animation-iteration-count: 1;
             animation-fill-mode: forwards;
         }
-    @keyframes fadeInAnimation {
+        @keyframes fadeInAnimation {
             0% {
                 opacity: 0;
             }
@@ -89,6 +129,21 @@
             font-size: 20px;
             margin-bottom: 40px;
         }
+
+        .accommodation,.services , .publicareas{
+            padding-top: 80px;
+        }
+        /* Add custom styles for image containers */
+        .image-container {
+            overflow: hidden;
+            height: 200px; /* Set the desired height for the image container */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
         .footer {
             background-color: #333;
             color: #fff;
@@ -101,58 +156,58 @@
         }
         /* Scroll up button styles */
         #scrollUpButton {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 20px;
-        z-index: 9999;
-        width: 50px;
-        height: 50px;
-        font-size: 1.5rem;
-        cursor: pointer;
-        background-color: #007bff;
-        color: #fff;
-        border: none;
-        border-radius: 50%;
-        transition: background-color 0.3s, transform 0.3s;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+            display: none;
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            z-index: 9999;
+            width: 50px;
+            height: 50px;
+            font-size: 1.5rem;
+            cursor: pointer;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 50%;
+            transition: background-color 0.3s, transform 0.3s;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         #scrollUpButton:hover {
-        background-color: #0056b3;
-        transform: scale(1.1);
+            background-color: #0056b3;
+            transform: scale(1.1);
         }
 
-    @media (max-width: 575.98px) {
+        @media (max-width: 575.98px) {
 
-    .carousel-caption{
-        align-items: center; 
-        background-color: rgba(0, 0, 0, 0.1);
-    }
-    
-    .carousel-caption h1{
-        padding-left: 10px;
-        padding-right: 10px;
-        font-size: 1.4rem;  
-    }
-    .carousel-caption p{
-        font-size: 1.2rem; 
-        padding-bottom: 40px;
-        align-items: center; 
-    }
-    .navbar ul{
-    padding-left:10px;
-    background-color: rgba(0, 0, 0, 0.5);
-   
-    }
-    .navbar-nav li:hover {
-     background-color: rgba(0, 0, 0, 0.5);
-    }
+            .carousel-caption{
+                align-items: center; 
+                background-color: rgba(0, 0, 0, 0.1);
+            }
 
-    }
-    </style>
+            .carousel-caption h1{
+                padding-left: 10px;
+                padding-right: 10px;
+                font-size: 1.4rem;  
+            }
+            .carousel-caption p{
+                font-size: 1.2rem; 
+                padding-bottom: 40px;
+                align-items: center; 
+            }
+            .navbar ul{
+                padding-left:10px;
+                background-color: rgba(0, 0, 0, 0.5);
+
+            }
+            .navbar-nav li:hover {
+             background-color: rgba(0, 0, 0, 0.5);
+         }
+
+     }
+ </style>
 </head>
 <body>
     <nav class="navbar navbar-expand-lg   fixed-top">
@@ -167,9 +222,13 @@
                         <a class="nav-link" href="#home">Home</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#accommodation">Accommodation</a>
+                    </li>
+                    
+                    <li class="nav-item">
                         <a class="nav-link" href="#services">Services</a>
                     </li>
- 
+
                 </ul>
             </div>
         </div>
@@ -188,23 +247,138 @@
         </div>
     </div>
 
+    <!-- Accommodation Section -->
+    <div class="accommodation section" id="accommodation">
+        <div class="container">
+            <h3>Accommodation</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="accommodationCarousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card mb-4">
+                                    <img src="img/b1.jpg" class="card-img-top" alt="Deluxe Room">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Deluxe Room</h4>
+                                        <p class="card-text">Experience luxury and comfort in our spacious deluxe rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-4">
+                                    <img src="img/b2.jpg" class="card-img-top" alt="Suite Room">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Suite Room</h4>
+                                        <p class="card-text">Indulge in elegance and style with our exquisite suite rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more carousel items here for each accommodation -->
+                        </div>
+                        <a class="carousel-control-prev" href="#accommodationCarousel1" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#accommodationCarousel1" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="accommodationCarousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card mb-4">
+                                    <img src="img/b1.jpg" class="card-img-top" alt="Deluxe Room">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Deluxe Room</h4>
+                                        <p class="card-text">Experience luxury and comfort in our spacious deluxe rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-4">
+                                    <img src="img/b2.jpg" class="card-img-top" alt="Suite Room">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Suite Room</h4>
+                                        <p class="card-text">Indulge in elegance and style with our exquisite suite rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more carousel items here for each accommodation -->
+                        </div>
+                        <a class="carousel-control-prev" href="#accommodationCarousel2" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#accommodationCarousel2" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Services Section -->
     <div class="services" id="services">
         <div class="container">
             <h3>Services</h3>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h4>Comfy Rooms</h4>
                     <p>Relax in our cozy and well-furnished rooms.</p>
                 </div>
-                <div class="col-md-6">
+                <div class="col-md-4">
                     <h4>Authentic Cuisine</h4>
                     <p>Savor the flavors of delicious local dishes.</p>
                 </div>
+                <div class="col-md-4">
+                    <h4>Spa & Wellness</h4>
+                    <p>Pamper yourself with our rejuvenating spa and wellness services.</p>
+                </div>
             </div>
-         
         </div>
     </div>
+
+    <!-- Public Areas Section -->
+    <div class="public-areas" id="public-areas">
+        <div class="container">
+            <h3>Public Areas</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/p1.jpg" class="card-img-top" alt="Pool Area">
+                        <div class="card-body">
+                            <h4 class="card-title">Pool Area</h4>
+                            <p class="card-text">Take a refreshing dip in our stunning pool.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/p2.jpg" class="card-img-top" alt="Restaurant">
+                        <div class="card-body">
+                            <h4 class="card-title">Restaurant</h4>
+                            <p class="card-text">Enjoy exquisite meals in our elegant restaurant.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/p3.jpg" class="card-img-top" alt="Garden">
+                        <div class="card-body">
+                            <h4 class="card-title">Garden</h4>
+                            <p class="card-text">Relax and unwind in our lush and serene garden.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <!-- Footer Section -->
     <footer class="footer">
@@ -212,8 +386,8 @@
             <p>&copy; 2023 Africa House</p>
         </div>
     </footer>
- <!-- Scroll up button -->
- <button id="scrollUpButton" onclick="scrollToTop()">
+    <!-- Scroll up button -->
+    <button id="scrollUpButton" onclick="scrollToTop()">
         <i class="fas fa-arrow-up"></i>
     </button>
     <!-- Bootstrap JS (Optional) -->
@@ -221,60 +395,60 @@
     <script>
     // Function to close the Bootstrap Navbar menu
      function closeNavbarMenu() {
-            var navToggler = document.querySelector('.navbar-toggler');
-            var navbarMenu = document.querySelector('.navbar-collapse');
+        var navToggler = document.querySelector('.navbar-toggler');
+        var navbarMenu = document.querySelector('.navbar-collapse');
 
-            if (navToggler && navbarMenu) {
+        if (navToggler && navbarMenu) {
                 // Check if the menu is open
-                if (navbarMenu.classList.contains('show')) {
+            if (navbarMenu.classList.contains('show')) {
                     // Hide the menu by triggering the click event on the toggler
-                    navToggler.click();
-                }
+                navToggler.click();
             }
         }
+    }
 
         // Attach the closeNavbarMenu function to the click event of each Navbar link
-        var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
-        if (navLinks) {
-            navLinks.forEach(function(link) {
-                link.addEventListener('click', function() {
-                    closeNavbarMenu();
-                });
+    var navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    if (navLinks) {
+        navLinks.forEach(function(link) {
+            link.addEventListener('click', function() {
+                closeNavbarMenu();
             });
-        }
+        });
+    }
 
         // Show or hide the scroll-up button based on scroll position
-        window.onscroll = function() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                document.getElementById("scrollUpButton").style.display = "block";
-            } else {
-                document.getElementById("scrollUpButton").style.display = "none";
-            }
-        };
+    window.onscroll = function() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            document.getElementById("scrollUpButton").style.display = "block";
+        } else {
+            document.getElementById("scrollUpButton").style.display = "none";
+        }
+    };
 
         // Scroll to the top of the page smoothly
-        function scrollToTop() {
+    function scrollToTop() {
             // Scroll to the top with smooth behavior
-            if ('scrollBehavior' in document.documentElement.style) {
-                document.documentElement.scrollTo({
-                    top: 0,
-                    behavior: 'smooth'
-                });
-            } else {
+        if ('scrollBehavior' in document.documentElement.style) {
+            document.documentElement.scrollTo({
+                top: 0,
+                behavior: 'smooth'
+            });
+        } else {
                 // For browsers that do not support scroll behavior, simply jump to the top
-                document.documentElement.scrollTop = 0;
-            }
+            document.documentElement.scrollTop = 0;
         }
+    }
 // JavaScript to add a class to the navbar when scrolled
-            window.addEventListener('scroll', function() {
-            const navbar = document.querySelector('.navbar');
-            if (window.scrollY > 0) {
-                navbar.classList.add('bg-scroll');
-            } else {
-                navbar.classList.remove('bg-scroll');
-            }
-        });
-    </script>
-  
+    window.addEventListener('scroll', function() {
+        const navbar = document.querySelector('.navbar');
+        if (window.scrollY > 0) {
+            navbar.classList.add('bg-scroll');
+        } else {
+            navbar.classList.remove('bg-scroll');
+        }
+    });
+</script>
+
 </body>
 </html>
