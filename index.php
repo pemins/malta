@@ -358,8 +358,8 @@
                     <p>Savor the flavors of delicious local dishes.</p>
                 </div>
                 <div class="col-md-4">
-                    <h4>Spa & Wellness</h4>
-                    <p>Pamper yourself with our rejuvenating spa and wellness services.</p>
+                    <h4>Spa </h4>
+                    <p>Pamper yourself with our rejuvenating spa.</p>
                 </div>
             </div>
         </div>
