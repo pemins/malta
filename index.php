@@ -352,8 +352,8 @@
                     <div class="card mb-4">
                         <img src="img/p1.jpg" class="card-img-top" alt="Pool Area">
                         <div class="card-body">
-                            <h4 class="card-title">Pool Area</h4>
-                            <p class="card-text">Take a refreshing dip in our stunning pool.</p>
+                            <h4 class="card-title"> </h4>
+                            <p class="card-text"> </p>
                         </div>
                     </div>
                 </div>
@@ -361,8 +361,8 @@
                     <div class="card mb-4">
                         <img src="img/p2.jpg" class="card-img-top" alt="Restaurant">
                         <div class="card-body">
-                            <h4 class="card-title">Restaurant</h4>
-                            <p class="card-text">Enjoy exquisite meals in our elegant restaurant.</p>
+                            <h4 class="card-title"> </h4>
+                            <p class="card-text"> </p>
                         </div>
                     </div>
                 </div>
@@ -370,8 +370,8 @@
                     <div class="card mb-4">
                         <img src="img/p3.jpg" class="card-img-top" alt="Garden">
                         <div class="card-body">
-                            <h4 class="card-title">Garden</h4>
-                            <p class="card-text">Relax and unwind in our lush and serene garden.</p>
+                            <h4 class="card-title"> </h4>
+                            <p class="card-text"></p>
                         </div>
                     </div>
                 </div>
