@@ -78,7 +78,9 @@
         .navbar-nav .nav-link:hover {
             opacity: 0.8;
         }
-        .header-carousel-item {
+
+        #home  .carousel-item {
+
             text-align: center;
             background-size: cover;
             background-position: center;
@@ -118,22 +120,44 @@
             }
         }
         .services {
-            background-color: #f8f9fa;
+            color:#fff;
+            background-color: #3D85C6;
             padding: 100px 0;
         }
         .services h3 {
             font-size: 32px;
             margin-bottom: 20px;
-            color: #007bff;
+            color: #fff;
         }
         .services p {
             font-size: 20px;
             margin-bottom: 40px;
         }
+        .accommodation{
+            background-color: #286EAE;
+            /* background-color: rgb(241,194,50); */
+        }
+        .accommodation h3{
+            color:#fff;
+            
+        }
+        .public-areas, .public-areas h3{
+            color:#fff;
+            background-color: #6FA8DC;
+            margin-bottom: 10px;
+            /* background-color: rgb(255,229,153); */
+        }
+        .public-areas img {
+            transition: transform 0.3s ease-in-out;
+        }
 
-        .accommodation,.services , .publicareas{
+        .public-areas img:hover {
+            transform: scale(1.1);  
+        }
+        .accommodation,.services , .public-areas{
             padding-top: 80px;
         }
+
         /* Add custom styles for image containers */
         .image-container {
             overflow: hidden;
@@ -308,19 +332,79 @@
         </div>
     </div>
 
-    <div id="accommodation" class="accommodation-container ">
-        <h3>Accomodation</h3>
-        <div class="slider-container">
-          <div id="carousel" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="img/2.jpg" alt="Accommodation 1" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="img/3.jpg" alt="Accommodation 2" class="d-block w-100">
-            </div>
-            <div class="carousel-item">
-                <img src="img/5.jpg" alt="Accommodation 3" class="d-block w-100">
+
+    <!-- Accommodation Section -->
+    <div class="accommodation section" id="accommodation">
+        <div class="container">
+            <h3>Accommodation</h3>
+            <div class="row">
+                <div class="col-md-6">
+                    <div id="accommodationCarousel1" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card mb-4">
+                                    <img src="img/b1.jpg" class="card-img-top" alt="Deluxe Room">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Deluxe Room</h4>
+                                        <p class="card-text">Experience luxury and comfort in our spacious deluxe rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-4">
+                                    <img src="img/b2.jpg" class="card-img-top" alt="Suite Room">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Suite Room</h4>
+                                        <p class="card-text">Indulge in elegance and style with our exquisite suite rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more carousel items here for each accommodation -->
+                        </div>
+                        <a class="carousel-control-prev" href="#accommodationCarousel1" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#accommodationCarousel1" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div id="accommodationCarousel2" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <div class="card mb-4">
+                                    <img src="img/7.jpg" class="card-img-top" alt="Deluxe Room">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Bed Room</h4>
+                                        <p class="card-text">Experience luxury and comfort in our spacious bed rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <div class="card mb-4">
+                                    <img src="img/5.jpg" class="card-img-top" alt="Suite Room">
+                                    <div class="card-body">
+                                        <h4 class="card-title">Suite Room</h4>
+                                        <p class="card-text">Indulge in elegance and style with our exquisite suite rooms.</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Add more carousel items here for each accommodation -->
+                        </div>
+                        <a class="carousel-control-prev" href="#accommodationCarousel2" role="button" data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </a>
+                        <a class="carousel-control-next" href="#accommodationCarousel2" role="button" data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </a>
+                    </div>
+                </div>
+
             </div>
         </div>
         <a class="carousel-control-prev" href="#carousel" role="button" data-slide="prev">
@@ -335,56 +419,60 @@
 </div>
 </div>
 
-<!-- Services Section -->
-<div class="services" id="services">
-    <div class="container">
-        <h3>Services</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <h4>Comfy Rooms</h4>
-                <p>Relax in our cozy and well-furnished rooms.</p>
-            </div>
-            <div class="col-md-4">
-                <h4>Authentic Cuisine</h4>
-                <p>Savor the flavors of delicious local dishes.</p>
-            </div>
-            <div class="col-md-4">
-                <h4>Spa & Wellness</h4>
-                <p>Pamper yourself with our rejuvenating spa and wellness services.</p>
+
+    <!-- Services Section -->
+    <div class="services" id="services">
+        <div class="container">
+            <h3>Services</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <h4>Comfy Rooms</h4>
+                    <p>Relax in our cozy and well-furnished rooms.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Authentic Cuisine</h4>
+                    <p>Savor the flavors of delicious local dishes.</p>
+                </div>
+                <div class="col-md-4">
+                    <h4>Spa </h4>
+                    <p>Pamper yourself with our rejuvenating spa.</p>
+                </div>
+
             </div>
         </div>
     </div>
 </div>
 
-<!-- Public Areas Section -->
-<div class="public-areas" id="public-areas">
-    <div class="container">
-        <h3>Public Areas</h3>
-        <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="img/p1.jpg" class="card-img-top" alt="Pool Area">
-                    <div class="card-body">
-                        <h4 class="card-title">Pool Area</h4>
-                        <p class="card-text">Take a refreshing dip in our stunning pool.</p>
+    <!-- Public Areas Section -->
+    <div class="public-areas" id="public-areas">
+        <div class="container">
+            <h3>Public Areas</h3>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/p1.jpg" class="card-img-top" alt="Pool Area">
+                        <div class="card-body">
+                            <h4 class="card-title"> </h4>
+                            <p class="card-text"> </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="img/p2.jpg" class="card-img-top" alt="Restaurant">
-                    <div class="card-body">
-                        <h4 class="card-title">Restaurant</h4>
-                        <p class="card-text">Enjoy exquisite meals in our elegant restaurant.</p>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/p2.jpg" class="card-img-top" alt="Restaurant">
+                        <div class="card-body">
+                            <h4 class="card-title"> </h4>
+                            <p class="card-text"> </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="img/p3.jpg" class="card-img-top" alt="Garden">
-                    <div class="card-body">
-                        <h4 class="card-title">Garden</h4>
-                        <p class="card-text">Relax and unwind in our lush and serene garden.</p>
+                <div class="col-md-4">
+                    <div class="card mb-4">
+                        <img src="img/p3.jpg" class="card-img-top" alt="Garden">
+                        <div class="card-body">
+                            <h4 class="card-title"> </h4>
+                            <p class="card-text"></p>
+                        </div>
                     </div>
                 </div>
             </div>
