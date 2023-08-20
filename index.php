@@ -77,7 +77,7 @@
         .navbar-nav .nav-link:hover {
             opacity: 0.8;
         }
-      #home  .carousel-item {
+        #home  .carousel-item {
             text-align: center;
             background-size: cover;
             background-position: center;
@@ -117,22 +117,44 @@
             }
         }
         .services {
-            background-color: #f8f9fa;
+            color:#fff;
+            background-color: #3D85C6;
             padding: 100px 0;
         }
         .services h3 {
             font-size: 32px;
             margin-bottom: 20px;
-            color: #007bff;
+            color: #fff;
         }
         .services p {
             font-size: 20px;
             margin-bottom: 40px;
         }
+        .accommodation{
+            background-color: #286EAE;
+            /* background-color: rgb(241,194,50); */
+        }
+        .accommodation h3{
+            color:#fff;
+            
+        }
+        .public-areas, .public-areas h3{
+            color:#fff;
+            background-color: #6FA8DC;
+            margin-bottom: 10px;
+            /* background-color: rgb(255,229,153); */
+        }
+        .public-areas img {
+            transition: transform 0.3s ease-in-out;
+        }
 
-        .accommodation,.services , .publicareas{
+        .public-areas img:hover {
+            transform: scale(1.1);  
+        }
+        .accommodation,.services , .public-areas{
             padding-top: 80px;
         }
+
         /* Add custom styles for image containers */
         .image-container {
             overflow: hidden;
@@ -290,16 +312,16 @@
                         <div class="carousel-inner">
                             <div class="carousel-item active">
                                 <div class="card mb-4">
-                                    <img src="img/b1.jpg" class="card-img-top" alt="Deluxe Room">
+                                    <img src="img/7.jpg" class="card-img-top" alt="Deluxe Room">
                                     <div class="card-body">
-                                        <h4 class="card-title">Deluxe Room</h4>
-                                        <p class="card-text">Experience luxury and comfort in our spacious deluxe rooms.</p>
+                                        <h4 class="card-title">Bed Room</h4>
+                                        <p class="card-text">Experience luxury and comfort in our spacious bed rooms.</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="carousel-item">
                                 <div class="card mb-4">
-                                    <img src="img/b2.jpg" class="card-img-top" alt="Suite Room">
+                                    <img src="img/5.jpg" class="card-img-top" alt="Suite Room">
                                     <div class="card-body">
                                         <h4 class="card-title">Suite Room</h4>
                                         <p class="card-text">Indulge in elegance and style with our exquisite suite rooms.</p>
