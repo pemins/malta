@@ -77,7 +77,7 @@
         .navbar-nav .nav-link:hover {
             opacity: 0.8;
         }
-        .carousel-item {
+      #home  .carousel-item {
             text-align: center;
             background-size: cover;
             background-position: center;
